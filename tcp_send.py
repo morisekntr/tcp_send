@@ -1,5 +1,5 @@
 from scapy.all import IP, TCP, send
-# from scapy.layers.http import HTTPRequest  # HTTPリクエスト用
+from scapy.layers.http import HTTPRequest  # HTTPリクエスト用
 # from scapy.layers.mqtt import MQTTConnect  # MQTT用
 
 # 送信先の設定
@@ -18,9 +18,9 @@ http_packet = tcp_packet / HTTPRequest(
 )
 
 # MQTT接続リクエストの例
-mqtt_packet = tcp_packet / MQTTConnect(
-    ClientId="client_id"
-)
+# mqtt_packet = tcp_packet / MQTTConnect(
+#     ClientId="client_id"
+# )
 
 # 送信するパケットを選択
 packet_to_send = http_packet  # HTTPリクエストを送信する場合
