@@ -10,3 +10,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/socket.py", line 231, in __init__
     _socket.socket.__init__(self, family, type, proto, fileno)
 PermissionError: [Errno 1] Operation not permitted
+
+Traceback (most recent call last):
+  File "tcp_payload.py", line 1, in <module>
+    from scapy.all import IP, TCP, send
+ModuleNotFoundError: No module named 'scapy'
