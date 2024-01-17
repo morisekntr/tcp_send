@@ -1,6 +1,6 @@
 from scapy.all import IP, TCP, send
-from scapy.layers.http import HTTPRequest  # HTTPリクエスト用
-from scapy.layers.mqtt import MQTTConnect  # MQTT用
+# from scapy.layers.http import HTTPRequest  # HTTPリクエスト用
+# from scapy.layers.mqtt import MQTTConnect  # MQTT用
 
 # 送信先の設定
 dst_ip = "192.168.1.100"  # 送信先のIPアドレス
