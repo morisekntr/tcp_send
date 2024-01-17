@@ -1,8 +1,8 @@
 from scapy.all import IP, TCP, send
 
 # 送信先のIPアドレスとポートを指定
-destination_ip = "192.168.100.100"  # ここに送信先のIPアドレスを入力
-destination_port = 80            # ここに送信先のポートを入力
+destination_ip = "192.168.200.100"  # ここに送信先のIPアドレスを入力
+destination_port = 1883            # ここに送信先のポートを入力
 
 # 16進数で表されたTCPペイロードをユーザーに入力してもらう
 hex_payload = input("Enter the hexadecimal payload: ")
